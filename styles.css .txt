@@ -1,0 +1,83 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+#gameContainer {
+    position: relative;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #333;
+    border: 1px solid #444;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.7);
+}
+
+#darkRoom {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-color: #000;
+    overflow: hidden;
+}
+
+#torch {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0) 70%);
+    pointer-events: none;
+    mix-blend-mode: screen;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: blur(5px);
+}
+
+#imageContainer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#currentImage {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#controls {
+    margin: 20px 0;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 0 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+#feedback {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+#score {
+    font-size: 20px;
+}
